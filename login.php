@@ -1,9 +1,12 @@
 <?php
-    if($_SERVER["REQUEST_METHOD"]=="post"){
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
         $username = $_POST['username'];
         $password = $_POST['password'];
-        if($username=='sudhanshu'){
+        if($username=='sudhanshu'&&$password=='12345'){
             echo "user login";
+        }
+        else{
+            echo "invalid user";
         }
 
         $host = "localhost";
